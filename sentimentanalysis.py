@@ -87,7 +87,7 @@ df_songs_valence_1.loc[:, "Binary_Valence"] = df_songs_valence_1["Valence"].appl
 nltk.download('stopwords')
 nltk.download('punkt')
 
-additional_words_for_removal = ('chorus','bridge','verse','yes','yeah','liveget')
+additional_words_for_removal = ('chorus','bridge','verse','yes','yeah','liveget','tickets','intro','outro','lyrics')
 
 def tokenize_and_clean(text):
     stop_words = set(stopwords.words('english'))
